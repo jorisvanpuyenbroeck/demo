@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <p>Je vroeg: {{ question }}</p>
+    <p>Classificatie: {{ prediction }}</p>
+    <p>Kans op juistheid: {{ "{:.2f}%".format(confidence * 100) }}</p>
+    <form method="GET" action="/reset">
+        <input type="submit" value="Reset">
+    </form>
+</body>
+</html>
