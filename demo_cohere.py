@@ -5,14 +5,11 @@ import json
 
 app = Flask(__name__)
 
-# Specify the path to the JSON file
-json_file_path = 'config/cohere.json'  # Adjust the path as needed
+json_file_path = 'config/cohere.json'
 
-# Read the JSON file
 with open(json_file_path, 'r') as json_file:
     data = json.load(json_file)
 
-# Access the 'api_key' from the JSON data
 api_key = data['api_key']
 
 question=""
